@@ -3,9 +3,11 @@
 @{
     ViewData["Title"] = "Página Inicial";
 }
+<body style="background-color:black">
+
 
 <div class="text-center">
-    <h1 class="display-4">Nossos Produtos</h1>
+    <h1 class="display-4" style="color:white">Nossos Produtos</h1>
 </div>
 
 <div class="row">
@@ -13,7 +15,7 @@
     {
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="@produto.ImageUrl" class="card-img-top" alt="@produto.Nome" style="height: 200px; object-fit: cover;">
+                <img src="@produto.ImageUrl" class="card-img-top" alt="@produto.Nome" style="object-fit: cover; ">
                 <div class="card-body">
                     <h5 class="card-title">@produto.Nome</h5>
                     <p class="card-text">@produto.Descricao</p>
@@ -33,3 +35,8 @@
         </div>
     }
 </div>
+
+
+
+
+</body>
